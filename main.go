@@ -28,7 +28,7 @@ func main() {
 
 	cfg, err := config.LoadDefaultConfig(context.Background())
 	if err != nil {
-		log.Fatalf("failed to load configuration, %v", err)
+		log.Fatalf("failed to load configuration: %v", err)
 	}
 
 	dynamoDBClient := dynamodb.NewFromConfig(cfg)
