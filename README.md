@@ -36,7 +36,7 @@ There are helper bash scripts which you can use to define aliases in your zshrc 
 # Follow by quote ID to see it in testing
 alias qt="aws-vault exec aviva-testing -- sh ~/code/quote-printer/quote.sh"
 # Follow by quote ID to see it in staging
-alias qt="aws-vault exec aviva-staging -- sh ~/code/quote-printer/quote.sh"
+alias qs="aws-vault exec aviva-staging -- sh ~/code/quote-printer/quote.sh"
 # Follow by policy ID to see the latest policy state in testing
 alias pt="aws-vault exec aviva-testing -- sh ~/code/quote-printer/latest_policy.sh"
 # Follow by policy ID to see the latest policy state in staging
