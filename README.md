@@ -1,4 +1,4 @@
-# Quote Querier
+# Quote Printer
 
 CLI tool to print a quote or policy to the terminal. Quicker than having to log into the AWS console and query DynamoDB!
 
