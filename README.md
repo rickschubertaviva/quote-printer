@@ -34,15 +34,15 @@ There are helper bash scripts which you can use to define aliases in your zshrc 
 
 ```sh
 # Follow by quote ID to see it in testing
-alias qt="aws-vault exec aviva-testing -- sh ~/code/quote-query/quote.sh"
+alias qt="aws-vault exec aviva-testing -- sh ~/code/quote-printer/quote.sh"
 # Follow by quote ID to see it in staging
-alias qt="aws-vault exec aviva-staging -- sh ~/code/quote-query/quote.sh"
+alias qt="aws-vault exec aviva-staging -- sh ~/code/quote-printer/quote.sh"
 # Follow by policy ID to see the latest policy state in testing
-alias pt="aws-vault exec aviva-testing -- sh ~/code/quote-query/latest_policy.sh"
+alias pt="aws-vault exec aviva-testing -- sh ~/code/quote-printer/latest_policy.sh"
 # Follow by policy ID to see the latest policy state in staging
-alias ps="aws-vault exec aviva-staging -- sh ~/code/quote-query/latest_policy.sh"
+alias ps="aws-vault exec aviva-staging -- sh ~/code/quote-printer/latest_policy.sh"
 # Follow by policy ID to inspect a selected policy state in testing
-alias pst="aws-vault exec aviva-testing -- sh ~/code/quote-query/select_policy.sh"
+alias pst="aws-vault exec aviva-testing -- sh ~/code/quote-printer/select_policy.sh"
 # Follow by policy ID to inspect a selected policy state in staging
-alias pss="aws-vault exec aviva-staging -- sh ~/code/quote-query/select_policy.sh"
+alias pss="aws-vault exec aviva-staging -- sh ~/code/quote-printer/select_policy.sh"
 ```
