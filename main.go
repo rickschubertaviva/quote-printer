@@ -38,7 +38,7 @@ func main() {
 	if cliArgs.scanForPolicy {
 		getPolicy(dynamoDBClient, tableName, cliArgs)
 	} else {
-		getQuote(dynamoDBClient, tableName, cliArgs.idToGet)
+		getQuote(dynamoDBClient, tableName, cliArgs)
 	}
 }
 
@@ -180,12 +180,12 @@ func getPolicy(
 func getQuote(
 	dynamoDBClient *dynamodb.Client,
 	tableName string,
-	idToGet string,
+	cliArgs CLIArguments,
 ) {
 	item := getItemFromDynamoDB(
 		dynamoDBClient,
 		tableName,
-		fmt.Sprintf("quote/%s", idToGet),
+		fmt.Sprintf("quote/%s", cliArgs.idToGet),
 		"quote",
 	)
 
